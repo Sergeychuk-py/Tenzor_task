@@ -1,0 +1,7 @@
+.pytest_cache/
+../.venv/
+.idea/
+.__pycache__/
+.chromedriver.exe/
+.test/logs.txt/
+.logs.txt/
