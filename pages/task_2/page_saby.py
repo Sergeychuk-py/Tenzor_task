@@ -16,13 +16,14 @@ class PageSaby:
         self.driver.find_element(By.CSS_SELECTOR, '.sbisru-Header-ContactsMenu__arrow-icon').click()
 
     def check_region(self, region):
-        pagination_block = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(
+        region_block = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(
             TenzorLocators2.LOCATOR_TENZOR_CHECK_REGION)).text
-        assert pagination_block == region
+        assert region_block == region
 
     def check_city(self, city):
-        check_city = self.driver.find_element(By.XPATH, '//div[contains(text(), "Челябинск")]')
-        assert check_city.text == city
+        city_block = WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(
+            TenzorLocators2.LOCATOR_TENZOR_CHECK_PARTNERS_UPDATE)).text
+        assert city_block == city
 
     def list_partners(self):
         self.driver.get('https://saby.ru/')

@@ -11,7 +11,7 @@ from selenium.webdriver.common.by import By
 from Tenzor_task.pages.task_2.page_saby import PageSaby
 
 
-class TestSaby():
+class Test_Saby():
 
     def test_check_region(self, driver):
         page_saby = PageSaby(driver)
