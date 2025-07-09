@@ -87,3 +87,6 @@
 #     check_city = WebDriverWait(driver, 10).until(
 #         EC.presence_of_element_located(TenzorLocators2.LOCATOR_TENZOR_CHECK_PARTNERS_UPDATE))
 #     assert check_city.text == 'Екатеринбург'
+
+string = "БОЛЬШАЯ ЧАСТЬ ОШИБОК СОСРЕДОТОЧЕНА В НЕБОЛЬШОМ КОЛИЧЕСТВ МОДУЛЕЙ СИСТЕМЫ"
+print(string.lower())
