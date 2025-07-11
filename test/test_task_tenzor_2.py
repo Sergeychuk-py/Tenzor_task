@@ -34,10 +34,10 @@ class Test_Saby():
         driver.find_element(By.XPATH, '//div[contains(text(), "Контакты")]').click()
         driver.find_element(By.CSS_SELECTOR, '.sbisru-Header-ContactsMenu__arrow-icon').click()
 
-        #driver.find_element(By.XPATH, '// span[@class="sbis_ru-Region-Chooser ml-16 ml-xm-0"]').click()
-        sd = WebDriverWait(driver, timeout=15).until(driver.find_element(By.XPATH, '// span[@class="sbis_ru-Region-Chooser ml-16 ml-xm-0"]'))
-
+        driver.find_element(By.XPATH, '// span[@class="sbis_ru-Region-Chooser ml-16 ml-xm-0"]').click()
+        time.sleep(15)
         driver.find_element(By.XPATH, '// span[contains(text(), "41 Камчатский край")]').click()
         driver.find_element(By.XPATH, '(//span[@class="controls-DecoratorHighlight"])[43]').click()
+        time.sleep(15)
         assert driver.current_url == 'https://saby.ru/contacts/41-kamchatskij-kraj?tab=clients'
         assert driver.title == 'Saby Контакты — Камчатский край'
