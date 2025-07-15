@@ -26,9 +26,6 @@ class PageSaby:
         assert city_block == city
 
     def list_partners(self):
-        self.driver.get('https://saby.ru/')
-        self.driver.find_element(By.XPATH, '//div[contains(text(), "Контакты")]').click()
-        self.driver.find_element(By.CSS_SELECTOR, '.sbisru-Header-ContactsMenu__arrow-icon').click()
         list_partners = []
         block_partners = WebDriverWait(self.driver, timeout=30).until(
             EC.presence_of_all_elements_located(TenzorLocators2.LOCATOR_TENZOR_CHECK_PARTNERS))

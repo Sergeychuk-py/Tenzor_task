@@ -88,5 +88,10 @@
 #         EC.presence_of_element_located(TenzorLocators2.LOCATOR_TENZOR_CHECK_PARTNERS_UPDATE))
 #     assert check_city.text == 'Екатеринбург'
 
-string = "БОЛЬШАЯ ЧАСТЬ ОШИБОК СОСРЕДОТОЧЕНА В НЕБОЛЬШОМ КОЛИЧЕСТВ МОДУЛЕЙ СИСТЕМЫ"
-print(string.lower())
+# string = "БОЛЬШАЯ ЧАСТЬ ОШИБОК СОСРЕДОТОЧЕНА В НЕБОЛЬШОМ КОЛИЧЕСТВ МОДУЛЕЙ СИСТЕМЫ"
+# print(string.lower())
+
+# assert driver.current_url == 'https://saby.ru/contacts/41-kamchatskij-kraj?tab=clients'
+#
+# input_el = driver.find_element(By.XPATH, '// input[@name="ws-input_2025-07-15"]')
+#         input_el.send_keys('Камчатский край')
